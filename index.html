@@ -4,38 +4,50 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign In</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <title>Portfolio - Home</title>
     <link rel="stylesheet" href="index.css" />
 </head>
 
 <body>
 
-    <div class="container">
-        <form class="login-box">
-            <h2>Sign In</h2>
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="index.html">MyPortfolio</a>
 
-            <div class="input-group">
-                <label>Email</label>
-                <input type="email" placeholder="Enter your email" required>
-            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
 
-            <div class="input-group">
-                <label>Password</label>
-                <input type="password" placeholder="Enter your password" required>
-            </div>
+            <button class="hamburger" id="hamburger">☰</button>
+        </nav>
+    </header>
 
-            <button type="submit" class="btn">Sign In</button>
-            <br>
-            <br>
-            <p class="extra">
-                Forgot password? <a href="#">Reset</a>
-            </p>
-            <p class="extra">
-                Don't have an account? <a href="#">Register</a>
-            </p>
-        </form>
-    </div>
+    <section class="hero">
+        <h1>Hello, My name is Kanan Guliyev.</h1>
+        <p>Welcome to my portfolio website.</p>
+        <div class="socials">
+            <a href="https://github.com/Thanos555" target="_blank">GitHub</a>
+            <a href="https://www.codecademy.com/profiles/thanoskanan" target="_blank">Codecademy</a>
+            <a href="https://www.linkedin.com/in/kenan-quliyev-836936323/" target="_blank">LinkedIn</a>
+        </div>
+    </section>
 
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>I am a Junior Front-End Developer and a Computer Science major at ADA University. Alongside my studies, I am
+            also the co-founder of Study AI, a startup focused on helping students find universities, scholarships, and
+            application requirements through an AI-powered platform. I worked at Park Cinema as a cinema technician,
+            where I gained valuable hands-on experience in technical operations. My goal is to grow as a developer,
+            contribute to meaningful projects, and create tools that make people’s lives easier.</p>
+    </section>
+
+    <footer>
+        <p>© 2025 My Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

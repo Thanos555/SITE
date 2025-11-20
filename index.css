@@ -1,91 +1,164 @@
-* {
+body {
+    font-family: 'Inter', sans-serif;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
 }
 
-body {
-    height: 100vh;
-    background: linear-gradient(135deg, #4c6ef5, #15aabf);
+.navbar {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #111;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+.navbar .logo {
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #007BFF;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.container {
-    width: 100%;
-    max-width: 380px;
-    padding: 20px;
-}
-
-.login-box {
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-    animation: fade 0.7s ease;
-}
-
-.login-box h2 {
+    background: linear-gradient(135deg, #007BFF, #00BFFF);
+    color: white;
     text-align: center;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
     margin-bottom: 20px;
-    color: #333;
+    word-spacing: 3px;
 }
 
-.input-group {
-    margin-bottom: 15px;
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
 }
 
-.input-group label {
-    color: #555;
-    font-size: 18px;
-    font-style: bold;
-}
-
-.input-group input {
-    width: 100%;
-    padding: 10px 12px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 15px;
-    transition: 0.3s;
-}
-
-.input-group input:focus {
-    border-color: #4c6ef5;
-    outline: none;
-}
-
-.btn {
-    width: 100%;
-    padding: 12px;
-    background: #4c6ef5;
-    color: #fff;
-    font-size: 16px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s;
-    margin-top: 10px;
-}
-
-.btn:hover {
-    background: #3b5bdb;
-}
-
-.extra {
-    text-align: center;
-    margin-top: 10px;
-    font-size: 14px;
-}
-
-.extra a {
-    color: #4c6ef5;
+.hero .socials a {
+    margin: 0 10px;
     text-decoration: none;
+    color: white;
+    font-weight: 600;
+    border: 2px solid white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s;
 }
 
-.extra a:hover {
-    text-decoration: underline;
+.hero .socials a:hover {
+    background-color: white;
+    color: #007BFF;
+}
+
+.about {
+    max-width: 800px;
+    margin: 140px auto 50px auto;
+    /* leave space for fixed navbar */
+    padding: 40px 25px;
+    background: linear-gradient(135deg, #e6f0ff, #ffffff);
+    /* subtle gradient */
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.2);
+    /* soft blue shadow */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.about:hover {
+    transform: translateY(-5px);
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #007BFF;
+    word-spacing: 4px;
+}
+
+.about p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #333;
+    word-spacing: 2px;
+}
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        background-color: #222;
+        padding: 15px;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 180px;
+        border-radius: 5px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .about {
+        margin: 100px 15px 50px 15px;
+        padding: 20px 15px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
 }
