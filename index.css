@@ -93,13 +93,10 @@ body {
 .about {
     max-width: 800px;
     margin: 140px auto 50px auto;
-    /* leave space for fixed navbar */
     padding: 40px 25px;
     background: linear-gradient(135deg, #e6f0ff, #ffffff);
-    /* subtle gradient */
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0, 123, 255, 0.2);
-    /* soft blue shadow */
     text-align: center;
     transition: transform 0.3s ease;
 }
@@ -131,7 +128,97 @@ footer {
     margin-top: 50px;
 }
 
-/* Responsive */
+.experience-cards {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 300px;
+    flex-wrap: wrap;
+}
+
+.experience .card {
+    flex: 0 1 220px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.2);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.experience .card img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.container h2 {
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.my-site {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #007BFF, #00BFFF);
+    color: white;
+    text-align: center;
+}
+
+.my-site h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.site-card {
+    background: white;
+    color: #333;
+    border-radius: 15px;
+    padding: 25px;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.site-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.site-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.site-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.site-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+.btn-visit {
+    background: black;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn-visit:hover {
+    background: #0056b3;
+}
+
+
 @media (max-width: 700px) {
     .nav-menu {
         display: none;
@@ -160,5 +247,14 @@ footer {
 
     .hero p {
         font-size: 1rem;
+    }
+
+    .experience-cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .experience .card {
+        width: 80%;
     }
 }
