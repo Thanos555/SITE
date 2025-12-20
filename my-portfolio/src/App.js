@@ -2,6 +2,7 @@ import { useState } from "react";
 import Home from "./pages/Home/index.jsx";
 import About from "./pages/About/aboutpage.jsx";
 import Adaprojects from "./pages/Adaprojects/ada-projects.jsx";
+import Highlights from "./pages/highlights/highlights.jsx";
 import "./pages/Home/index.css";
 import "./pages/About/aboutpage.css";
 import "./pages/Adaprojects/adaprojects.css";
@@ -15,13 +16,12 @@ function App() {
 
     const handleNavClick = (selectedPage) => {
         setPage(selectedPage);
-        setMenuOpen(false);          // close hamburger
-        window.scrollTo({ top: 0, behavior: "smooth" }); // scroll to top
+        setMenuOpen(false);
+        window.scrollTo({ top: 0, behavior: "smooth" });
     };
 
     return (
         <div className="App">
-            {/* NAVBAR */}
             <header>
                 <nav className="navbar">
                     <a className="logo" href="#">MyPortfolio</a>
@@ -45,6 +45,12 @@ function App() {
                         >
                             SITE Projects
                         </li>
+                        <li
+                            className={page === "highlights" ? "active" : ""}
+                            onClick={() => handleNavClick("highlights")}
+                        >
+                            Highlights
+                        </li>
                     </ul>
 
                     <button
@@ -54,13 +60,13 @@ function App() {
                         ☰
                     </button>
                 </nav>
-            </header>
 
-            {/* PAGE CONTENT */}
+            </header>
             <main>
                 {page === "home" && <Home />}
                 {page === "about" && <About />}
                 {page === "projects" && <Adaprojects />}
+                {page === "highlights" && <Highlights />}
             </main>
             <footer>
                 &copy; 2025 Kanan Guliyev |{" "}

@@ -7,7 +7,7 @@ export default function Home() {
             <section className="hero">
                 <h1>Hello, My name is Kanan Guliyev.</h1>
                 <img
-                    src="/img/Изображение WhatsApp 2025-12-14 в 18.22.16_f5ef39ef.jpg"
+                    src={process.env.PUBLIC_URL + "/img/kananguliyev.jpg"}
                     alt="Kanan Guliyev"
                     className="hero-img"
                 />
@@ -52,15 +52,15 @@ export default function Home() {
                     <br />
                     <div className="experience-cards">
                         <div className="card">
-                            <img src="/img/parkcinemalogo.jpg" alt="Park Cinema" />
+                            <img src={process.env.PUBLIC_URL + "/img/parkcinemalogo.jpg"} alt="Park Cinema" />
                             <h3>Park Cinema</h3>
                         </div>
                         <div className="card">
-                            <img src="/img/cop29logo.webp" alt="COP29" />
+                            <img src={process.env.PUBLIC_URL + "/img/cop29logo.webp"} alt="COP29" />
                             <h3>COP29</h3>
                         </div>
                         <div className="card">
-                            <img src="/img/ecotechlogo.jpg" alt="Baku Eco Tech 2023" />
+                            <img src={process.env.PUBLIC_URL + "/img/ecotechlogo.jpg"} alt="Baku Eco Tech 2023" />
                             <h3>Baku Eco Tech 2023</h3>
                         </div>
                     </div>
@@ -72,7 +72,7 @@ export default function Home() {
                 <div className="container">
                     <h2>My WebSite</h2>
                     <div className="site-card">
-                        <img src="/img/tacorootlogo2.png" alt="tacoroot" />
+                        <img src={process.env.PUBLIC_URL + "/img/tacorootlogo2.png"} alt="tacoroot" />
                         <h3>Tacoroot</h3>
                         <br />
                         <a

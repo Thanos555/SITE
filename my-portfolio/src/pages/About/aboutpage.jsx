@@ -7,7 +7,7 @@ const About = () => {
       <div id="about" className="about">
         <img
           className="portrait"
-          src="/img/Изображение WhatsApp 2025-12-14 в 18.22.16_f5ef39ef.jpg"
+          src={process.env.PUBLIC_URL + "/img/kananguliyev.jpg"}
           alt="Portrait"
         />
         <p>
@@ -18,9 +18,9 @@ const About = () => {
           My goal is to grow as a developer, contribute to meaningful projects, and create tools that make people’s lives easier.
         </p>
       </div>
-<br />
-<br />
-<br />
+      <br />
+      <br />
+      <br />
       <section id="contact" className="contact">
         <h2>Contact Me</h2>
         <p>If you'd like to get in touch, feel free to reach out via the following:</p>
