@@ -89,6 +89,17 @@ body {
     word-spacing: 3px;
 }
 
+.hero-img {
+    width: 220px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 20px 0;
+    border: none;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+
 .hero p {
     font-size: 25px;
     margin-bottom: 30px;
@@ -100,11 +111,8 @@ body {
     align-items: center;
     gap: 15px;
     margin-top: 20px;
-    /* space below hero heading */
     flex-wrap: wrap;
-    /* wrap on small screens */
     position: relative;
-    /* no absolute positioning */
     z-index: 10;
 }
 
@@ -169,7 +177,6 @@ body {
     margin-bottom: 10px;
 }
 
-/* ===== My Site Section ===== */
 .my-site {
     padding: 60px 20px;
     background: linear-gradient(135deg, #007BFF, #00BFFF);
@@ -228,7 +235,6 @@ body {
     background: #0056b3;
 }
 
-/* ===== Contact Section ===== */
 .contact-card {
     display: flex;
     flex-direction: column;
@@ -245,7 +251,6 @@ body {
     text-decoration: underline;
 }
 
-/* ===== Footer ===== */
 footer {
     background: #111;
     color: white;
@@ -261,6 +266,15 @@ footer {
 
     .hero p {
         font-size: 20px;
+    }
+
+    .hero-img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
     }
 
     .experience .card img {

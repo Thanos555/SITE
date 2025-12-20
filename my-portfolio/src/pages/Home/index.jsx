@@ -6,6 +6,11 @@ export default function Home() {
         <div>
             <section className="hero">
                 <h1>Hello, My name is Kanan Guliyev.</h1>
+                <img
+                    src="/img/Изображение WhatsApp 2025-12-14 в 18.22.16_f5ef39ef.jpg"
+                    alt="Kanan Guliyev"
+                    className="hero-img"
+                />
                 <p>Welcome to my portfolio website.</p>
                 <div className="socials">
                     <a

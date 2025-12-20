@@ -28,7 +28,13 @@ const Adaprojects = () => {
         <div className="project-card">
           <h2>Project 2</h2>
           <div className="video-container">
-            <h3>Coming Soon....</h3>
+            <iframe
+              src="https://www.youtube.com/embed/AHFbyp1CLtU"
+              title="Project 1 Video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </div>
           <p className="project-description">
             An Hour of Code / AI activity introducing students to basic coding and AI.
